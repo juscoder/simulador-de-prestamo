@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3c44aa10f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/prestamo.css">
+    <title>Simulador de Prestamo</title>
+</head>
+<body>
+    <div class="form">
+        <fieldset>
+            <h1>SIMULADOR DE PRESTAMO</h1>
+            <form>
+                <div>
+                    <label for="capital">CAPITAL 
+                        <input type="text" placeholder="Ingrese el capital prestado" id="capital">
+                        <i class="fas fa-coins"></i>
+                    </label>
+                </div>
+                <div>
+                    <label for="couta">COUTAS 
+                        <input type="text" placeholder="Ingrese las cuotas del prestamo" id="couta">
+                        <i class="far fa-calendar-alt"></i>
+                    </label>
+                </div>
+                <div>
+                    <label for="interes">INTERES
+                        <input type="text" placeholder="Ingrese el interés a generar" id="interes">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </label>
+                </div>
+            </form>
+        <button onclick="gen_table();">CALCULAR</button>
+        </fieldset>
+        <hr>
+        <table class="tab">
+            <thead>
+                <tr>
+                    <td>NRO</td>
+                    <td>CAPITAL</td>
+                    <td>INTERES</td>
+                    <td>IMPORTE A PAGAR</td>
+                </tr>
+            </thead>
+            <tbody id="tab">
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td class="ft">TOTAL</td>
+                    <td id="t1"></td>
+                    <td id="t2"></td>
+                    <td id="t3"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script src="scripts/prestamo.js"></script>
+</body>
+</html>
