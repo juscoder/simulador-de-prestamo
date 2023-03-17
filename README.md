@@ -5,3 +5,5 @@ Este es un trabajo de simulador de prestamos
 ## SCREENSHOT
 ---
 ![CAPTURA DE PANTALLA](http://imgfz.com/i/Kn0Y1x6.jpeg)
+---
+## Preview: <https://simulador-de-prestamo.netlify.app/>
